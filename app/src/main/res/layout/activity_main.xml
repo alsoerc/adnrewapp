@@ -75,7 +75,8 @@
         app:itemBackground="@color/rewappColor"
         app:itemIconTint="@color/colorGray"
         app:itemTextColor="@color/colorGray"
-        app:menu="@menu/navigation"/>
+        app:menu="@menu/navigation"
+        />
         <!-- Aquí se hace referencia al archivo xml
          de navigation para agregar más ítems al menú
          Y colores de la barra de navegación-->

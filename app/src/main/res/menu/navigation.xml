@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+
     <item
         android:id="@+id/navigation_gana"
 
@@ -26,6 +27,7 @@
         android:icon="@drawable/ic_home_black_24dp"
 
         android:title="Inicio"/>
+
 
     <!--Los id son llamados desde la clase main.
      Sirven para identificar a cada item-->
