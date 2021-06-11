@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_canjear_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_attach_money_black_24dp"
+            android:layout_gravity="center"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/txt_canjea_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Taza"
+                />
+
+            <TextView
+                android:id="@+id/txt_canjea_restriccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Taza"
+                />
+
+            <TextView
+                android:id="@+id/txt_canjea_precio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_attach_money_black_24dp"
+                tools:text="1000"
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_canjea_agegar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agregar"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

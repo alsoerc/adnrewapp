@@ -35,9 +35,4 @@
         android:name="org.adn.rewapp.ui.Gana"
         android:label="fragment_gana"
         tools:layout="@layout/fragment_gana" />
-    <fragment
-        android:id="@+id/comparte1"
-        android:name="org.adn.rewapp.comparte1"
-        android:label="fragment_comparte1"
-        tools:layout="@layout/fragment_comparte1" />
 </navigation>
