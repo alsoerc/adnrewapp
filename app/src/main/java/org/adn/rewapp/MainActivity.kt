@@ -1,12 +1,16 @@
 package org.adn.rewapp
 
 import android.app.admin.SystemUpdatePolicy
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.app.ActionBar
 import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import kotlinx.android.synthetic.main.activity_main.*
 import org.adn.rewapp.ui.*
+import org.adn.rewapp.ui.Perfil
 
 
 class MainActivity : AppCompatActivity() {
@@ -72,6 +76,18 @@ class MainActivity : AppCompatActivity() {
         val bottomNavigation: BottomNavigationView = findViewById(R.id.navigationView)
 
         bottomNavigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
+
+        inicio_perfil.setOnClickListener { view ->
+
+            val intent = Intent(this, Perfil::class.java)
+            startActivity(intent)
+
+
+        /*val fm = supportFragmentManager
+            val ft = fm.beginTransaction()
+            ft.add(R.id.main_view, Perfil())
+            ft.commit()*/
+        }
 
     }
 }

@@ -25,14 +25,6 @@
         android:icon="@drawable/userpicture"
         android:title="Gana"/>
 
-
-
-
-
-
-
-
-
     <!--Los id son llamados desde la clase main.
      Sirven para identificar a cada item-->
 

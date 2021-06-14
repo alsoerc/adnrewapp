@@ -35,4 +35,9 @@
         android:name="org.adn.rewapp.ui.Gana"
         android:label="fragment_gana"
         tools:layout="@layout/fragment_gana" />
+    <fragment
+        android:id="@+id/perfil"
+        android:name="org.adn.rewapp.Perfil"
+        android:label="fragment_perfil"
+        tools:layout="@layout/fragment_perfil" />
 </navigation>
