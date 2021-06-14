@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/mainActivity">
+    app:startDestination="@id/inicio">
 
     <activity
         android:id="@+id/mainActivity"
@@ -24,7 +24,11 @@
         android:id="@+id/ranking"
         android:name="org.adn.rewapp.ui.Ranking"
         android:label="fragment_ranking"
-        tools:layout="@layout/fragment_ranking" />
+        tools:layout="@layout/fragment_ranking" >
+        <action
+            android:id="@+id/action_ranking_to_detalle_ranking"
+            app:destination="@id/detalle_ranking" />
+    </fragment>
     <fragment
         android:id="@+id/comparte"
         android:name="org.adn.rewapp.ui.Comparte"
@@ -36,8 +40,8 @@
         android:label="fragment_gana"
         tools:layout="@layout/fragment_gana" />
     <fragment
-        android:id="@+id/perfil"
-        android:name="org.adn.rewapp.Perfil"
-        android:label="fragment_perfil"
-        tools:layout="@layout/fragment_perfil" />
+        android:id="@+id/detalle_ranking"
+        android:name="org.adn.rewapp.detalle_ranking"
+        android:label="fragment_detalle_ranking"
+        tools:layout="@layout/fragment_detalle_ranking" />
 </navigation>

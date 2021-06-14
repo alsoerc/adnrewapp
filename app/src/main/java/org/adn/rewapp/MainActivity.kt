@@ -58,7 +58,7 @@ class MainActivity : AppCompatActivity() {
     //Dar foco a fragment
     private fun openFragment(fragment: Fragment) {
         val transaction = supportFragmentManager.beginTransaction()
-        transaction.replace(R.id.container, fragment)
+        transaction.replace(R.id.nav_host_fragment, fragment)
         transaction.addToBackStack(null)
         transaction.commit()
     }
