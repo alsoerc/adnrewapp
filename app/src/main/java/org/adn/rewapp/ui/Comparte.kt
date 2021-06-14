@@ -5,11 +5,14 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import org.adn.rewapp.Adapter.ListAdapterHistory
 import org.adn.rewapp.Model.History
 
 import org.adn.rewapp.R
+import org.adn.rewapp.comparte_preview
+import org.adn.rewapp.detalle_ranking
 
 
 class Comparte : Fragment() {
@@ -44,4 +47,20 @@ class Comparte : Fragment() {
         fun newInstance() : Comparte = Comparte()
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        var searcher = view.findViewById<ImageView>(R.id.search_comparte)
+
+        searcher.setOnClickListener { view ->
+            val fragment = comparte_preview()
+            val fr = activity?.supportFragmentManager
+            val fragmenT = fr!!.beginTransaction()
+            fragmenT.replace(R.id.nav_host_fragment, fragment)
+            fragmenT.addToBackStack(null)
+            fragmenT.commit()
+        }
+
+
+    }
 }

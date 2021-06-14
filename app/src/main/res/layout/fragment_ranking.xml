@@ -58,7 +58,7 @@
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
                 style="@style/TextViewData"
-                android:text="4to Lugar"
+                android:text="6to lugar"
                 />
             <TextView
                 android:id="@+id/my_total_points"
@@ -66,7 +66,7 @@
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
                 style="@style/TextViewData"
-                android:text="Nombre con x puntos"/>
+                android:text="Nombre con 20 puntos"/>
 
         </LinearLayout>
 

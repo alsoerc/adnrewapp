@@ -5,7 +5,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
+import android.widget.Toast
 import androidx.annotation.IdRes
+import androidx.core.view.get
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
@@ -42,6 +44,7 @@ class Ranking : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val recyclerView2 = view.findViewById<RecyclerView>(R.id.recyclerViewRanking)
+
         recyclerView2.adapter = ListAdapterRanking(listOf(
             org.adn.rewapp.Model.Ranking("4to lugar", 3),
             org.adn.rewapp.Model.Ranking("4to lugar", 3),
@@ -53,6 +56,10 @@ class Ranking : Fragment() {
             org.adn.rewapp.Model.Ranking("4to lugar", 3),
             org.adn.rewapp.Model.Ranking("4to lugar", 3)
         ))
+
+        recyclerView2.setOnClickListener(View.OnClickListener { view ->
+            Toast.makeText(context, "SELECCION: " + recyclerView2[recyclerView2.getChildAdapterPosition(view)], Toast.LENGTH_SHORT).show()
+        })
 
         val btnRankingDetail = view.findViewById<LinearLayout>(R.id.ranking_position)
         btnRankingDetail.setOnClickListener { view ->

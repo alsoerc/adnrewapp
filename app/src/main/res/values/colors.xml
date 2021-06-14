@@ -8,6 +8,10 @@
     <color name="colorGrayLight">#A6B3BF</color>
     <color name="rewappColor">#DBDCE0</color>
 
+
+    <color name="colorRed">#E53935</color>
+    <color name="colorGreen">#43A047</color>
+
     <!-- Los colores de los items de la barra de navegación
      se cambia en el xml de activity main-->
 

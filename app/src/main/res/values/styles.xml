@@ -24,4 +24,13 @@
         <item name="android:textSize">20dp</item>
     </style>
 
+    <style name="CompartePreview">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_margin">7dp</item>
+    </style>
+
+
+
 </resources>

@@ -10,7 +10,6 @@ import org.adn.rewapp.R
 
 class ListAdapterRanking(private val rankings : List<Ranking>) : RecyclerView.Adapter<ListAdapterRanking.ViewHolder>() {
 
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater
             .from(parent.context)
@@ -24,7 +23,6 @@ class ListAdapterRanking(private val rankings : List<Ranking>) : RecyclerView.Ad
         val ranking = rankings[position]
         holder.bind(ranking)
     }
-
     class ViewHolder(view : View) : RecyclerView.ViewHolder(view){
         private val rankingPosition = view.findViewById<TextView>(R.id.ranking_position)
         private val totalPoints = view.findViewById<TextView>(R.id.total_points)
@@ -33,7 +31,6 @@ class ListAdapterRanking(private val rankings : List<Ranking>) : RecyclerView.Ad
             rankingPosition.text = ranking.rankingPosition
             totalPoints.text = ranking.totalPoints.toString()
         }
-
     }
 
 }

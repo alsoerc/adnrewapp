@@ -33,7 +33,11 @@
         android:id="@+id/comparte"
         android:name="org.adn.rewapp.ui.Comparte"
         android:label="fragment_comparte"
-        tools:layout="@layout/fragment_comparte" />
+        tools:layout="@layout/fragment_comparte" >
+        <action
+            android:id="@+id/action_comparte_to_comparte_preview"
+            app:destination="@id/comparte_preview" />
+    </fragment>
     <fragment
         android:id="@+id/gana"
         android:name="org.adn.rewapp.ui.Gana"
@@ -44,4 +48,9 @@
         android:name="org.adn.rewapp.detalle_ranking"
         android:label="fragment_detalle_ranking"
         tools:layout="@layout/fragment_detalle_ranking" />
+    <fragment
+        android:id="@+id/comparte_preview"
+        android:name="org.adn.rewapp.comparte_preview"
+        android:label="fragment_comparte_preview"
+        tools:layout="@layout/fragment_comparte_preview" />
 </navigation>
