@@ -1,32 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-
     <item
-        android:id="@+id/navigation_gana"
-
-        android:title="Gana"/>
-
+        android:id="@+id/navigation_inicio"
+        android:icon="@drawable/home1"
+        android:title="Inicio"/>
     <item
-        android:id="@+id/navigation_comparte"
-
-        android:title="Comparte"/>
-
+        android:id="@+id/navigation_canjea"
+        android:icon="@drawable/smartphone"
+        android:title="Canjea"/>
     <item
         android:id="@+id/navigation_ranking"
-
+        android:icon="@drawable/trofeo"
         android:title="Ranking"/>
 
     <item
-        android:id="@+id/navigation_canjea"
+        android:id="@+id/navigation_comparte"
+        android:icon="@drawable/gift"
+        android:title="Comparte"/>
 
-        android:title="Canjea"/>
 
     <item
-        android:id="@+id/navigation_inicio"
-        android:icon="@drawable/ic_home_black_24dp"
+        android:id="@+id/navigation_gana"
+        android:icon="@drawable/userpicture"
+        android:title="Gana"/>
 
-        android:title="Inicio"/>
+
+
+
+
+
+
 
 
     <!--Los id son llamados desde la clase main.
