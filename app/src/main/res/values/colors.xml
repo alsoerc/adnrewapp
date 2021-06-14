@@ -12,6 +12,11 @@
     <color name="colorRed">#E53935</color>
     <color name="colorGreen">#43A047</color>
 
+    <color name="orange">#CD461C</color>
+    <color name="orangeLight">#EB7D5A</color>
+    <color name="black">#1B1B1B</color>
+
+
     <!-- Los colores de los items de la barra de navegación
      se cambia en el xml de activity main-->
 

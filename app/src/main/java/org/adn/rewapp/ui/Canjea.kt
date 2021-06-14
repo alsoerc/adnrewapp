@@ -33,7 +33,21 @@ class Canjea : Fragment() {
             Canjear("asd", "Orden de tacos", "", 12),
             Canjear("asd", "Orden de tacos", "", 12),
             Canjear("asd", "Orden de tacos", "", 12),
-            Canjear("asd", "Orden de tacos", "", 12)
+            Canjear("asd", "Orden de tacos", "", 12),
+            Canjear("asd", "Orden de tacos", "", 12),
+            Canjear("asd", "Orden de tacos", "", 12),
+            Canjear("asd", "Orden de tacos", "", 12),
+            Canjear("asd", "Orden de tacos", "", 12),
+            Canjear("asd", "Orden de tacos", "", 12),
+            Canjear("asd", "Orden de tacos", "", 12),
+            Canjear("asd", "Orden de tacos", "", 12),
+            Canjear("asd", "Orden de tacos", "", 12),
+            Canjear("asd", "Orden de tacos", "", 12),
+            Canjear("asd", "Orden de tacos", "", 12),
+            Canjear("asd", "Orden de tacos", "", 12),
+            Canjear("asd", "Orden de tacos", "", 12),
+            Canjear("asd", "Orden de tacos", "", 12),
+            Canjear("asd", "Orden de tacos", "", 20)
         ))
 
 

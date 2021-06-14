@@ -54,12 +54,30 @@ class Ranking : Fragment() {
             org.adn.rewapp.Model.Ranking("4to lugar", 3),
             org.adn.rewapp.Model.Ranking("4to lugar", 3),
             org.adn.rewapp.Model.Ranking("4to lugar", 3),
-            org.adn.rewapp.Model.Ranking("4to lugar", 3)
+            org.adn.rewapp.Model.Ranking("4to lugar", 3),
+            org.adn.rewapp.Model.Ranking("4to lugar", 3),
+            org.adn.rewapp.Model.Ranking("4to lugar", 3),
+            org.adn.rewapp.Model.Ranking("4to lugar", 3),
+            org.adn.rewapp.Model.Ranking("4to lugar", 3),
+            org.adn.rewapp.Model.Ranking("4to lugar", 3),
+            org.adn.rewapp.Model.Ranking("4to lugar", 3),
+            org.adn.rewapp.Model.Ranking("4to lugar", 3),
+            org.adn.rewapp.Model.Ranking("4to lugar", 3),
+            org.adn.rewapp.Model.Ranking("4to lugar", 3),
+            org.adn.rewapp.Model.Ranking("4to lugar", 3),
+            org.adn.rewapp.Model.Ranking("4to lugar", 3),
+            org.adn.rewapp.Model.Ranking("4to lugar", 3),
+            org.adn.rewapp.Model.Ranking("4to lugar", 3),
+            org.adn.rewapp.Model.Ranking("4to lugar", 3),
+            org.adn.rewapp.Model.Ranking("4to lugar", 3),
+            org.adn.rewapp.Model.Ranking("4to lugar", 3),
+            org.adn.rewapp.Model.Ranking("4to lugar", 3),
+            org.adn.rewapp.Model.Ranking("4to lugar", 3),
+            org.adn.rewapp.Model.Ranking("4to lugar", 3),
+            org.adn.rewapp.Model.Ranking("4to lugar", 3),
+            org.adn.rewapp.Model.Ranking("4to lugar", 20)
         ))
 
-        recyclerView2.setOnClickListener(View.OnClickListener { view ->
-            Toast.makeText(context, "SELECCION: " + recyclerView2[recyclerView2.getChildAdapterPosition(view)], Toast.LENGTH_SHORT).show()
-        })
 
         val btnRankingDetail = view.findViewById<LinearLayout>(R.id.ranking_position)
         btnRankingDetail.setOnClickListener { view ->
