@@ -19,7 +19,11 @@
         android:id="@+id/canjea"
         android:name="org.adn.rewapp.ui.Canjea"
         android:label="fragment_canjea"
-        tools:layout="@layout/fragment_canjea" />
+        tools:layout="@layout/fragment_canjea" >
+        <action
+            android:id="@+id/action_canjea_to_canjear_detalle"
+            app:destination="@id/canjear_detalle" />
+    </fragment>
     <fragment
         android:id="@+id/ranking"
         android:name="org.adn.rewapp.ui.Ranking"
@@ -53,4 +57,9 @@
         android:name="org.adn.rewapp.comparte_preview"
         android:label="fragment_comparte_preview"
         tools:layout="@layout/fragment_comparte_preview" />
+    <fragment
+        android:id="@+id/canjear_detalle"
+        android:name="org.adn.rewapp.canjear_detalle"
+        android:label="fragment_canjear_detalle"
+        tools:layout="@layout/fragment_canjear_detalle" />
 </navigation>

@@ -1,15 +1,18 @@
 package org.adn.rewapp.ui
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.RelativeLayout
+import android.widget.Toast
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentContainerView
 import androidx.recyclerview.widget.RecyclerView
 import org.adn.rewapp.Adapter.ListAdapterCanjear
 import org.adn.rewapp.Model.Canjear
-
 import org.adn.rewapp.R
+import java.util.*
 
 
 class Canjea : Fragment() {
@@ -26,30 +29,36 @@ class Canjea : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_canjea, container, false)
 
-        val recyclerView = view.findViewById<RecyclerView>(R.id.recyclerViewCanjear)
-        recyclerView.adapter = ListAdapterCanjear(listOf(
-            Canjear("asd", "Orden de tacos", "", 12),
-            Canjear("asd", "Orden de tacos", "*1 mes de anticipación", 12),
-            Canjear("asd", "Orden de tacos", "", 12),
-            Canjear("asd", "Orden de tacos", "", 12),
-            Canjear("asd", "Orden de tacos", "", 12),
-            Canjear("asd", "Orden de tacos", "", 12),
-            Canjear("asd", "Orden de tacos", "", 12),
-            Canjear("asd", "Orden de tacos", "", 12),
-            Canjear("asd", "Orden de tacos", "", 12),
-            Canjear("asd", "Orden de tacos", "", 12),
-            Canjear("asd", "Orden de tacos", "", 12),
-            Canjear("asd", "Orden de tacos", "", 12),
-            Canjear("asd", "Orden de tacos", "", 12),
-            Canjear("asd", "Orden de tacos", "", 12),
-            Canjear("asd", "Orden de tacos", "", 12),
-            Canjear("asd", "Orden de tacos", "", 12),
-            Canjear("asd", "Orden de tacos", "", 12),
-            Canjear("asd", "Orden de tacos", "", 12),
-            Canjear("asd", "Orden de tacos", "", 12),
-            Canjear("asd", "Orden de tacos", "", 20)
-        ))
 
+
+        val recyclerView = view.findViewById<RecyclerView>(R.id.recyclerViewCanjear)
+
+        var elements : ArrayList<Canjear> = ArrayList()
+        elements.add(Canjear("","asereje", "no", 20))
+        elements.add(Canjear("","taquitos", "no", 20))
+        elements.add(Canjear("","aahhh", "no", 20))
+        elements.add(Canjear("","tacos", "no", 20))
+        elements.add(Canjear("","tacos", "no", 20))
+
+      //  val listAdapter : ListAdapterCanjear = ListAdapterCanjear(elements)
+
+
+       /* listAdapter.setOnclickListener(View.OnClickListener {
+
+            val itemPosition = recyclerView.getChildLayoutPosition(view)
+            val itemName = elements.get(itemPosition).itemName
+
+
+            //print(elements.get(recyclerView.getChildAdapterPosition(view)).itemRestriction)
+
+            Toast.makeText(context, "elección : ${itemName}" , Toast.LENGTH_SHORT).show();
+        }) */
+
+
+
+        recyclerView.adapter= ListAdapterCanjear(elements) { element ->
+            Toast.makeText(context, "elección : ${element.itemName}" , Toast.LENGTH_SHORT).show();
+        };
 
 
         return view
