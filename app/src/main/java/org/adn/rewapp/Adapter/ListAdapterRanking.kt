@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import org.adn.rewapp.Model.Ranking
 import org.adn.rewapp.R
 
-class ListAdapterRanking(private val rankings : List<Ranking>) : RecyclerView.Adapter<ListAdapterRanking.ViewHolder>() {
+class ListAdapterRanking(private val rankings : List<Ranking>, private val listener: (Ranking) -> Unit) : RecyclerView.Adapter<ListAdapterRanking.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater
@@ -21,8 +21,10 @@ class ListAdapterRanking(private val rankings : List<Ranking>) : RecyclerView.Ad
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val ranking = rankings[position]
+        holder.itemView.setOnClickListener{listener(ranking)}
         holder.bind(ranking)
     }
+
     class ViewHolder(view : View) : RecyclerView.ViewHolder(view){
         private val rankingPosition = view.findViewById<TextView>(R.id.ranking_position)
         private val totalPoints = view.findViewById<TextView>(R.id.total_points)

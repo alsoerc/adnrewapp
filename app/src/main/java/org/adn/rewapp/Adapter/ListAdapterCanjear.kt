@@ -31,7 +31,9 @@ class ListAdapterCanjear(private val canjeos : List<Canjear>, private val listen
         holder.cv.animation = AnimationUtils.loadAnimation(holder.itemView.context, R.anim.fade_transition)
 
         //val anim: Animation = AnimationUtils.loadAnimation( , R.anim.fade_transition)
+
         holder.itemView.setOnClickListener{listener(canjeo)}
+
         holder.bind(canjeo)
     }
 

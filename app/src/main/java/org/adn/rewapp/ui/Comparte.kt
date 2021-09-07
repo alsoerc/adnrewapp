@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import org.adn.rewapp.Adapter.ListAdapterHistory
 import org.adn.rewapp.Model.History
@@ -30,14 +31,18 @@ class Comparte : Fragment() {
         val view = inflater.inflate(R.layout.fragment_comparte, container, false)
 
         val recyclerView = view.findViewById<RecyclerView>(R.id.recyclerViewHistory)
-        recyclerView.adapter = ListAdapterHistory(listOf(
-            History("tanto", "Hoy"),
-            History("tanto", "Hoy"),
-            History("tanto", "Hoy"),
-            History("tanto", "Hoy"),
-            History("tanto", "Hoy"),
-            History("tanto", "Hoy")
-        ))
+
+        var elements : ArrayList<History> = ArrayList()
+
+        elements.add(History("tanto", "Hoy"))
+        elements.add(History("tanto", "Hoy"))
+        elements.add(History("tanto", "Hoy"))
+        elements.add(History("tanto", "Hoy"))
+
+        recyclerView.adapter = ListAdapterHistory(elements){element ->
+            Toast.makeText(context, "elección : ${element.description}" , Toast.LENGTH_SHORT).show();
+        }
+
 
         // Inflate the layout for this fragment
         return view

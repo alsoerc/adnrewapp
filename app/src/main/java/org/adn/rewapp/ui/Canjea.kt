@@ -34,26 +34,12 @@ class Canjea : Fragment() {
         val recyclerView = view.findViewById<RecyclerView>(R.id.recyclerViewCanjear)
 
         var elements : ArrayList<Canjear> = ArrayList()
+
         elements.add(Canjear("","asereje", "no", 20))
         elements.add(Canjear("","taquitos", "no", 20))
         elements.add(Canjear("","aahhh", "no", 20))
         elements.add(Canjear("","tacos", "no", 20))
         elements.add(Canjear("","tacos", "no", 20))
-
-      //  val listAdapter : ListAdapterCanjear = ListAdapterCanjear(elements)
-
-
-       /* listAdapter.setOnclickListener(View.OnClickListener {
-
-            val itemPosition = recyclerView.getChildLayoutPosition(view)
-            val itemName = elements.get(itemPosition).itemName
-
-
-            //print(elements.get(recyclerView.getChildAdapterPosition(view)).itemRestriction)
-
-            Toast.makeText(context, "elección : ${itemName}" , Toast.LENGTH_SHORT).show();
-        }) */
-
 
 
         recyclerView.adapter= ListAdapterCanjear(elements) { element ->

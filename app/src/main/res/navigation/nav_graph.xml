@@ -62,4 +62,9 @@
         android:name="org.adn.rewapp.canjear_detalle"
         android:label="fragment_canjear_detalle"
         tools:layout="@layout/fragment_canjear_detalle" />
+    <activity
+        android:id="@+id/startActivity"
+        android:name="org.adn.rewapp.StartActivity"
+        android:label="activity_start"
+        tools:layout="@layout/activity_start" />
 </navigation>

@@ -1,12 +1,10 @@
 package org.adn.rewapp
 
-import android.app.admin.SystemUpdatePolicy
+
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.appcompat.app.ActionBar
 import androidx.fragment.app.Fragment
-import androidx.navigation.findNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_main.*
 import org.adn.rewapp.ui.*

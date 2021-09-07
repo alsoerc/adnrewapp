@@ -45,38 +45,16 @@ class Ranking : Fragment() {
 
         val recyclerView2 = view.findViewById<RecyclerView>(R.id.recyclerViewRanking)
 
-        recyclerView2.adapter = ListAdapterRanking(listOf(
-            org.adn.rewapp.Model.Ranking("4to lugar", 3),
-            org.adn.rewapp.Model.Ranking("4to lugar", 3),
-            org.adn.rewapp.Model.Ranking("4to lugar", 3),
-            org.adn.rewapp.Model.Ranking("4to lugar", 3),
-            org.adn.rewapp.Model.Ranking("4to lugar", 3),
-            org.adn.rewapp.Model.Ranking("4to lugar", 3),
-            org.adn.rewapp.Model.Ranking("4to lugar", 3),
-            org.adn.rewapp.Model.Ranking("4to lugar", 3),
-            org.adn.rewapp.Model.Ranking("4to lugar", 3),
-            org.adn.rewapp.Model.Ranking("4to lugar", 3),
-            org.adn.rewapp.Model.Ranking("4to lugar", 3),
-            org.adn.rewapp.Model.Ranking("4to lugar", 3),
-            org.adn.rewapp.Model.Ranking("4to lugar", 3),
-            org.adn.rewapp.Model.Ranking("4to lugar", 3),
-            org.adn.rewapp.Model.Ranking("4to lugar", 3),
-            org.adn.rewapp.Model.Ranking("4to lugar", 3),
-            org.adn.rewapp.Model.Ranking("4to lugar", 3),
-            org.adn.rewapp.Model.Ranking("4to lugar", 3),
-            org.adn.rewapp.Model.Ranking("4to lugar", 3),
-            org.adn.rewapp.Model.Ranking("4to lugar", 3),
-            org.adn.rewapp.Model.Ranking("4to lugar", 3),
-            org.adn.rewapp.Model.Ranking("4to lugar", 3),
-            org.adn.rewapp.Model.Ranking("4to lugar", 3),
-            org.adn.rewapp.Model.Ranking("4to lugar", 3),
-            org.adn.rewapp.Model.Ranking("4to lugar", 3),
-            org.adn.rewapp.Model.Ranking("4to lugar", 3),
-            org.adn.rewapp.Model.Ranking("4to lugar", 3),
-            org.adn.rewapp.Model.Ranking("4to lugar", 3),
-            org.adn.rewapp.Model.Ranking("4to lugar", 3),
-            org.adn.rewapp.Model.Ranking("4to lugar", 20)
-        ))
+        var elements : ArrayList<org.adn.rewapp.Model.Ranking> = ArrayList()
+        elements.add(org.adn.rewapp.Model.Ranking("1ro", 30))
+        elements.add(org.adn.rewapp.Model.Ranking("1ro", 30))
+        elements.add(org.adn.rewapp.Model.Ranking("1ro", 30))
+        elements.add(org.adn.rewapp.Model.Ranking("1ro", 30))
+
+
+        recyclerView2.adapter = ListAdapterRanking(elements){ element ->
+            
+        }
 
 
         val btnRankingDetail = view.findViewById<LinearLayout>(R.id.ranking_position)

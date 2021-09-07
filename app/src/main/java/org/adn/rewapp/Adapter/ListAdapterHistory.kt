@@ -5,10 +5,11 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import org.adn.rewapp.Model.Canjear
 import org.adn.rewapp.Model.History
 import org.adn.rewapp.R
 
-class ListAdapterHistory(private val histories : List<History>):RecyclerView.Adapter<ListAdapterHistory.ViewHolder>() {
+class ListAdapterHistory(private val histories : List<History>,  private val listener: (History) -> Unit):RecyclerView.Adapter<ListAdapterHistory.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater
@@ -21,9 +22,11 @@ class ListAdapterHistory(private val histories : List<History>):RecyclerView.Ada
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val history = histories[position]
+
+        holder.itemView.setOnClickListener{listener(history)}
+
         holder.bind(history)
     }
-
 
 
     class ViewHolder(view : View) : RecyclerView.ViewHolder(view){
@@ -36,7 +39,5 @@ class ListAdapterHistory(private val histories : List<History>):RecyclerView.Ada
         }
 
     }
-
-
 
 }
