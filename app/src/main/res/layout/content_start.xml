@@ -8,21 +8,35 @@
     android:gravity="center"
     android:layout_marginHorizontal="16sp">
 
-    <EditText
-        android:id="@+id/login_email"
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="@string/login_text"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textColor="@color/orange"
+        android:fontFamily="sans-serif-thin"/>
+
+    <EditText
+        android:id="@+id/txt_login_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/ic_baseline_email_24"
         android:ems="10"
-        android:hint="@string/txt_login_correo" />
-
+        android:hint="@string/txt_login_correo"
+        android:text="exkapp@gmail.com"
+        android:textColor="@color/colorGray" />
 
     <EditText
-        android:id="@+id/login_password"
+        android:id="@+id/txt_login_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/ic_baseline_lock_24"
         android:ems="10"
         android:hint="@string/txt_login_contraseña"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:text="sopita12"
+        android:textColor="@color/colorGray" />
 
     <Button
         android:id="@+id/btn_login"

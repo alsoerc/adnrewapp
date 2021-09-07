@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">rewapp</string>
+    <string name="app_name">Rewapp</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -21,8 +21,9 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-    <string name="title_activity_start">StartActivity</string>
+    <string name="title_activity_start">rewapp</string>
     <string name="btn_login">Entrar</string>
     <string name="txt_login_contraseña">Ingresa tu contraseña</string>
     <string name="txt_login_correo">Ingresa tu correo electrónico</string>
+    <string name="login_text">Rewapp</string>
 </resources>
